@@ -5,4 +5,3 @@ date
 echo "Listing files:"
 ls -l
 echo "===== BUILD END ====="
-auto trigger test
