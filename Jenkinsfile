@@ -13,9 +13,9 @@ pipeline {
     post {
         always {
             emailext(
-                to: 'your-email@gmail.com',
-                subject: "Build Success",
-                body: "Build completed successfully. Check attachment.",
+                to: 'balajiharish2000@gmail.com',
+                subject: "Jenkins Build: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: "Build completed. Please find the output attached.",
                 attachmentsPattern: 'output.txt'
             )
         }
